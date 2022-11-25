@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 public class TryCatchFinally {
@@ -15,5 +16,7 @@ public class TryCatchFinally {
 		}
 		System.out.println("Gia tri nhap la: "+ n);
 		System.out.println("Ket thuc chuong trinh");
+		
+		List<E>
 	}
 }
