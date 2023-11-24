@@ -17,6 +17,6 @@ public class TryCatchFinally {
 		System.out.println("Gia tri nhap la: "+ n);
 		System.out.println("Ket thuc chuong trinh");
 		
-		List<E>
+//		List<E>
 	}
 }

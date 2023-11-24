@@ -34,4 +34,14 @@ public class MyDate {
 		this.year = year;
 	}
 	
+	public void printDate() {
+		System.out.println(this.date);
+	}
+	
+	public void printMonth() {
+		System.out.println(this.month);
+	}
+	public void printYear() {
+		System.out.println(this.year);
+	}
 }
