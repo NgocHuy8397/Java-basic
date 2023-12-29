@@ -56,6 +56,12 @@ public class SinhVien implements Comparable<SinhVien>{
 	}
 	
 	@Override
+	public String toString() {
+		return "SinhVien [maSinhVien=" + maSinhVien + ", hoVaTen=" + hoVaTen + ", tenLop=" + tenLop + ", diemTrungBinh="
+				+ diemTrungBinh + "]";
+	}
+
+	@Override
 	public int compareTo(SinhVien o) {
 		// < 0
 		// = 0
