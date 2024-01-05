@@ -26,7 +26,7 @@ public class Test {
 			//vidu chuyen tu he nhi phan sang he thap phan
 			
 			Stack<Integer> stackSoDu = new Stack<Integer>();
-			System.out.println("Nhap mot so nguye duong tu ban phim");
+			System.out.println("Nhap mot so nguyen duong tu ban phim");
 			int x = sc.nextInt();
 			while(x>0) {
 				int soDu = x % 2;

@@ -87,7 +87,7 @@ public class DanhSachSinhVien {
 			oos.flush();
 			oos.close();
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	}
 

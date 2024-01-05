@@ -1,7 +1,10 @@
 package Main;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -87,8 +90,36 @@ public class DanhSachSinhVien {
 			oos.flush();
 			oos.close();
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	}
+
+	public void docDuLieuTuFile(File f) {
+		try {
+//			File file = new File("/home/admin/Downloads/Java-basic/How_to_save_objects_to_File/file.data");
+			InputStream is = new FileInputStream(f);
+			ObjectInputStream ois = new ObjectInputStream(is);
+			
+			SinhVien sv = null;
+			while(true) {
+				Object oj = ois.readObject();
+				if(oj != null) {
+					sv = (SinhVien) oj;
+					this.danhSach.add(sv);
+				}
+				
+				if(oj == null) {
+					break;
+				}
+			}
+			ois.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+
 
 }
